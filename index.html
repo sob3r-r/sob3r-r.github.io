@@ -1,0 +1,87 @@
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Tobiasz Sobera">
+    <meta name="description" content="Strona o zabytkach Włoszech">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zabytki Włoszech</title>
+
+    <link href="stylem.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+ </head>
+ <body>
+  <div id="kontener">
+   <div id="naglowek"> Na tej stronie poznasz warte zobaczenia zabytki we <span class="b">Włoszech.</span>
+   </div>
+   <div id="zegarek"></div>
+<script>
+         function zegar() {
+                const data = new Date();
+                const godzina = data.getHours().toString().padStart(2, '0');
+                const min = data.getMinutes().toString().padStart(2, '0');
+                const sek = data.getSeconds().toString().padStart(2, '0');
+                document.getElementById("zegarek").textContent = `${godzina}:${min}:${sek}`;
+                setTimeout(zegar, 1000);
+            }
+            zegar();
+</script>
+   <div class="kolumna">
+    <ul>
+        <li><a href="Podstrona1.html">Koloseum - Rzym</a></li>
+        <li><a href="Podstrona2.html">Fontanna di Trevi - Rzym</a></li>
+        <li><a href="Podstrona3.html">Ponte Vecchio - Florencja</a></li>
+        <li><a href="Podstrona4.html">Duomo - Mediolan</a></li>
+        <li><a href="Podstrona5.html">Krzywa wieża - Piza</a></li>
+        <li><a href="Podstrona6.html">Katedra Monreale - Palermo</a></li>
+        <li><a href="Podstrona7.html">Arena - Werona</a></li>
+    </ul>
+   </div>
+   <div class="kolumna">
+     <ol>
+     <li>Czy po zapoznaniu się z opisanymi zabytkami jesteś chętny do udania się na wycieczkę do Włoch ? <br>
+    <input type="radio" name="A" value="Y">Tak
+    <input type="radio" name="A" value="N">Nie </li>
+   <li> Które z wymienionych zabytków zaciekawiły cię najbardziej?  <br>
+    <input type="checkbox" name="zabytek" value="Koloseum">Koloseum<br>
+    <input type="checkbox" name="zabytek" value="Fontanna">Fontanna di Trevi<br>
+    <input type="checkbox" name="zabytek" value="Ponte">Ponte Vecchio<br>
+    <input type="checkbox" name="zabytek" value="Duomo">Duomo<br>
+    <input type="checkbox" name="zabytek" value="Wieża">Krzywa wieża<br>
+    <input type="checkbox" name="zabytek" value="Katedra">Katedra Monreale<br>
+    <input type="checkbox" name="zabytek" value="Arena">Arena<br>
+    <input type="submit" value="Zatwierdź"> </li>
+   </ol>
+   </div>
+  
+   <div class="kolumna">
+      <table>
+         <tr><td>Ciekawy film na temat Włoszech</td><td colspan="2"><button class="btn" onclick="location.href='https://www.youtube.com/watch?v=jxQYGFqbXWs'" type="button">Kliknij</button></td></tr>
+         <tr><td>Informacje dla podróżujących do Włoch</td><td colspan="2"><button class="btn" onclick="location.href='https://www.gov.pl/web/wlochy/informacje-dla-podrozujacych-do-wloch'" type="button">Kliknij</button></td></tr>
+         <tr><td>Mail do właściciela strony</td><td colspan="2"><button class="btn" onclick="location.href='mailto:tobiaszsobera@gmail.com'" type="button">Kliknij</button></td></tr>
+     </table>
+   </div>
+   <div id="clear"></div>
+   <div id="stopka">
+      <p>Napisz jakie jeszcze ciekawe miejsca warto odwiedzić we Włoszech:</p>
+<textarea name="Komentarz" cols="50" rows="8">Pisz tutaj...</textarea>
+<input type="submit" value="Wyślij">
+   </div>
+   <script>
+      $(document).ready(function() {
+        $(".btn").hover(
+          function() {
+            $(this).animate({ padding: "15px 20px" }, 200); // Powiększ przycisk przy najechaniu
+          },
+          function() {
+            $(this).animate({ padding: "10px 10px" }, 200); // Przywróć oryginalny rozmiar po zjechaniu
+          }
+        );
+      });
+    </script>
+ </body>
+</html>
+
+

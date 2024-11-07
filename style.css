@@ -1,0 +1,71 @@
+body 
+{
+margin-top: 25px;
+background-image: url(https://i.pinimg.com/originals/e5/79/96/e5799698e1255e1dfefd6c87b4fa8244.jpg);
+background-repeat: no-repeat;
+background-position: fixed;
+background-attachment: fixed;
+font-family: 'Times New Roman', Times, serif;
+ }
+p 
+{
+    font-size: 27px;
+    text-align: center;
+    text-indent: 80px;
+    margin-left: 150px;
+    margin-right: 150px;
+ }
+h1 {
+font-size: 40px;
+text-shadow: black;
+text-align:center;
+text-shadow: 1px 1px 2px black;
+font-family: 'Times New Roman', Times, serif;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+}
+ul li 
+{
+  margin: 0;
+  padding: 0;
+}
+ul li:first-child 
+{
+border-top:none;
+}
+ul li a {
+  display: block;
+  padding: 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  background: linear-gradient(90deg, rgba(192,192,192,0.6), rgba(169,169,169,0.6));
+  transition: 0.3s;
+  border-radius: 4px;
+  border-bottom: 1px solid #DDD;
+}
+ul li a:hover
+{
+  color: #d4a017;
+  background: url('https://hoom.co/wp-content/uploads/2018/08/Bianco-Carrara-marmur-2-1.jpg') center;
+  background-size: cover;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+#zdjecie{
+width: 950px;
+height: 550px;
+border: 2px solid black;
+}
+
+.i{
+    font-style: italic;
+  }
+
+.c{
+ color: goldenrod;
+}
