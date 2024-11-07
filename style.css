@@ -2,7 +2,7 @@ body
 {
 margin-top: 25px;
 background-image: url(https://i.pinimg.com/originals/e5/79/96/e5799698e1255e1dfefd6c87b4fa8244.jpg);
-background-repeat: no-repeat;
+background-repeat: repeat;
 background-position: fixed;
 background-attachment: fixed;
 font-family: 'Times New Roman', Times, serif;
